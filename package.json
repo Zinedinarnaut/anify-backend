@@ -4,13 +4,13 @@
     "module": "index.ts",
     "type": "module",
     "scripts": {
-        "start": "bun run dist/index.js",
-        "dev": "bun src/index.ts",
-        "build": "bun build ./src/index.ts --outdir ./dist --target node",
+        "start": "npm run dist/index.js",
+        "dev": "npm src/index.ts",
+        "build": "npm build ./src/index.ts --outdir ./dist --target node",
         "prettier": "bunx prettier --write .",
-        "lint": "bun run prettier && bunx tsc --noEmit && bunx eslint --fix .",
-        "scripts": "bun src/scripts/index.ts",
-        "test": "bun src/tests/index.ts"
+        "lint": "npm run prettier && bunx tsc --noEmit && bunx eslint --fix .",
+        "scripts": "npm src/scripts/index.ts",
+        "test": "npm src/tests/index.ts"
     },
     "dependencies": {
         "@extractus/article-extractor": "^8.0.16",
